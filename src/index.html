@@ -2,83 +2,105 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>Tarjeta de crédito válida</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<div id="general">
-<div id="resumen">
-<h1> ACA VA EL RESUMEN FACTURA </h1>
-</div>
-<div id="logo">
-<h1> Aca VA EL LOGO </h1>
-</div>
-<div id="body">
+  <div id="general">
+    <div id="resumen">
+      <h1> ACA VA EL RESUMEN FACTURA </h1>
+    </div>
+    <div id="logo">
+      <h1> Aca VA EL LOGO </h1>
+    </div>
+    <div id="body">
 
-<h3>Informacion Factura</h3><br>
-<label> <input type='text' id='nombres' placeholder="Nombres y Apellidos" required></label><br>
-<label><input type='text' id="ciudad" placeholder="Ciudad"></label> <br>
-<label><input type='text' id='direccion' placeholder="Direccion"></label> <br>
-<label><input type="number" id="celular" placeholder="Telefono contacto"> </label> <br>
-<br>
-<br>
+      <h3>Informacion Factura</h3><br>
+      <label> <input type='text' id='nombres' placeholder="Nombres y Apellidos" required></label><br>
+      <label><input type='text' id="ciudad" placeholder="Ciudad"></label> <br>
+      <label><input type='text' id='direccion' placeholder="Direccion"></label> <br>
+      <label><input type="text" id="celular" placeholder="Telefono contacto"> </label> <br>
+      <br>
+      <br>
 
-<h3>Informacion Tarjeta</h3><br>
-<br>
-Tipo de Tarjeta <br>
-<input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
-<input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
+      <h3>Informacion Tarjeta</h3><br>
+      <br>
+      Tipo de Tarjeta <br>
+      <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
+      <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
 
-<label> <input type='text' minlength="10" maxlength="10" id='creditCardNumber'
+      <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="numero de tarjeta"
+          required></label> <br>
+      <label><input type='text' id="nombresTitular" placeholder="Nombre como aparece en la tarjeta" required></label>
+      <br>
+      T.i<label>
+        <select name='menu'>
+          <option>C.C.</option>
+          <option>T.I.</option>
+          <option>C.E.</option>
+          <option>P.</option>
+        </select>
+      </label>
 
-placeholder="numero de tarjeta"
-required></label> <br>
-<label><input type='text' id="nombresTitular" placeholder="Nombre como aparece en la tarjeta"
-required></label>
-<br>
-T.i<label>
-<select name='menu'>
-<option>C.C.</option>
-<option>T.I.</option>
-<option>C.E.</option>
-<option>P.</option>
-</select>
-</label>
+      #ID
+      <label><input type='text' id="idPersona" placeholder="Numero documento" required></label><br>
 
-#ID
-<label><input type='text' id="idPersona" placeholder="Numero documento" required></label><br>
+      <label><input type='number' name="numero" id='numeroCuotas' placeholder="#Cuotas" required size="7"></label>
+      <label><input type='month' id="expiracionTarjeta" placeholder=" MM/DD" required size="7"></label>
+      <input type="password" id="codigoT" placeholder="CCV" required size="7"></label><br>
+      <br>
+      <br>
 
-<label><input type='number' name="numero" id='numeroCuotas' placeholder="#Cuotas" required
-size="7"></label>
-<label><input type='month' id="expiracionTarjeta" placeholder=" MM/DD" required size="7"></label>
-<input type="password" id="codigoT" placeholder="CCV" required size="7"></label><br>
-<br>
-<br>
+      <h3>Envio de Factura</h3><br>
 
-<h3>Envio de Factura</h3><br>
+      <label><input type='text' id='CiudadT' placeholder="Ciudad"></label> <br>
+      <label><input type="text" id="direccionT" placeholder="Dirección"> </label> <br>
 
-<label><input type='text' id='CiudadT' placeholder="Ciudad"></label> <br>
-<label><input type="text" id="direccionT" placeholder="Dirección"> </label> <br>
+      <br>
+      <br>
+      <br>
+      <button onclick="getData()"> Realizar Pago </button>
+      <script>
 
-<br>
-<br>
-<br>
-<button onclick="getData()"> Realizar Pago </button>
+        var getData = function () {
 
-<script src="index.js" type="module"></script>
+          var nombre = document.getElementById("nombres").value;
+          var creditCardNumber = document.getElementById("creditCardNumber").value;
 
-<br>
-<br>
-</div>
+          console.log(nombres, creditCardNumber)
+ 
 
-</div>
-<header></header>
-<main></main>
-<footer>
-</footer>
+
+
+        }
+
+        //localStorage.setItem("nombre", nombre);
+        //localStorage.setItem("creditCardNumber", creditCardNumber);
+        //  window.location.href = 'indexP4.html'//  
+        // Volver sting en array 
+        const aNumeroTarjeta = parseInt(Array.from("creditCardNumber"));
+        console.log(aNumeroTarjeta)
+        // Invertir el array 
+        const aInvertido = aNumeroTarjeta.reverse();
+        console.log(aNumeroTarjeta)
+
+
+      </script>
+
+      <script src="index.js" type="module"></script>
+
+      <br>
+      <br>
+    </div>
+
+  </div>
+  <header></header>
+  <main></main>
+  <footer>
+  </footer>
 
 </body>
 

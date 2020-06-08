@@ -1,5 +1,5 @@
 {
-  "name": "card-validation",
+  "name": "apuntadepuntos",
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
@@ -22,5 +22,19 @@
     "jest": "^24.9.0",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApuntaDePuntos/Validator.git"
+  },
+  "author": "A Punta De puntos",
+  "bugs": {
+    "url": "https://github.com/ApuntaDePuntos/Validator/issues"
+  },
+  "homepage": "https://github.com/ApuntaDePuntos/Validator#readme"
 }
