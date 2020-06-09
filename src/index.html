@@ -26,31 +26,35 @@
       <br>
       <br>
 
-      <h3>Informacion Tarjeta</h3><br>
-      <br>
-      Tipo de Tarjeta <br>
-      <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
-      <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
 
-      <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="numero de tarjeta"
-          required></label> <br>
-      <label><input type='text' id="nombresTitular" placeholder="Nombre como aparece en la tarjeta" required></label>
-      <br>
-      T.i<label>
-        <select name='menu'>
-          <option>C.C.</option>
-          <option>T.I.</option>
-          <option>C.E.</option>
-          <option>P.</option>
-        </select>
-      </label>
+      
+        <h3>Informacion Tarjeta</h3><br>
+        <br>
+        Tipo de Tarjeta <br>
+        <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
+        <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
 
-      #ID
-      <label><input type='text' id="idPersona" placeholder="Numero documento" required></label><br>
+        <label> <input type='text' minlength="16" maxlength="16" class="creditCardNumberInput" id='creditCardNumber'
+            placeholder="numero de tarjeta" required></label> <br>
+        <label><input type='text' id="nombresTitular" placeholder="Nombre como aparece en la tarjeta" required></label>
+        <br>
+        T.i<label>
+          <select name='menu'>
+            <option>C.C.</option>
+            <option>T.I.</option>
+            <option>C.E.</option>
+            <option>P.</option>
+          </select>
+        </label>
 
-      <label><input type='number' name="numero" id='numeroCuotas' placeholder="#Cuotas" required size="7"></label>
-      <label><input type='month' id="expiracionTarjeta" placeholder=" MM/DD" required size="7"></label>
-      <input type="password" id="codigoT" placeholder="CCV" required size="7"></label><br>
+        #ID
+        <label><input type='text' id="idPersona" placeholder="Numero documento" required></label><br>
+
+        <label><input type='number' name="numero" id='numeroCuotas' placeholder="#Cuotas" required size="7"></label>
+        <label><input type='month' id="expiracionTarjeta" placeholder=" MM/DD" required size="7"></label>
+        <input type="password" id="codigoT" placeholder="CCV" required size="7"></label><br>
+      </div>
+
       <br>
       <br>
 
@@ -62,39 +66,43 @@
       <br>
       <br>
       <br>
-      <button onclick="getData()"> Realizar Pago </button>
+      <button id="BotonTarjeta"> Realizar Pago </button>
       <script>
 
-        var getData = function () {
+       // function getData() {
 
-          var nombre = document.getElementById("nombres").value;
-          var creditCardNumber = document.getElementById("creditCardNumber").value;
+        //  var nombre = document.getElementById("nombres").value;
+         /* var creditCardNumber = parseInt(document.getElementById("creditCardNumber").value);
 
-          console.log(nombres, creditCardNumber)
- 
+          // console.log(getData)
+          console.log(nombre, creditCardNumber);
+          localStorage.setItem("nombre", nombre);
+          localStorage.setItem("creditCardNumber", creditCardNumber);
+
+          const aNumeroTarjeta = Array.from('creditCardNumber').value;
+          console.log(aNumeroTarjeta)
 
 
-
+          //  window.location.href = 'indexP4.html' 
         }
 
-        //localStorage.setItem("nombre", nombre);
-        //localStorage.setItem("creditCardNumber", creditCardNumber);
-        //  window.location.href = 'indexP4.html'//  
-        // Volver sting en array 
-        const aNumeroTarjeta = parseInt(Array.from("creditCardNumber"));
-        console.log(aNumeroTarjeta)
-        // Invertir el array 
-        const aInvertido = aNumeroTarjeta.reverse();
-        console.log(aNumeroTarjeta)
+        function volverArray() {
+          // Volver sting en array 
+          //const aNumeroTarjeta = Array.from("creditCardNumber");
+          //console.log(aNumeroTarjeta)
 
-
-      </script>
+          // Invertir el array 
+          const aInvertido = aNumeroTarjeta.reverse();
+          console.log(aNumeroTarjeta)
+        
+*/
+      </script> 
 
       <script src="index.js" type="module"></script>
 
       <br>
       <br>
-    </div>
+    
 
   </div>
   <header></header>

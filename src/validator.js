@@ -6,19 +6,10 @@ const aNumeroTarjeta= parseInt (Array.from("numeroTarjeta"));
 const aInvertido= aNumeroTarjeta.reverse(); 
 console.log (aInvertido)
 
-const validator = {
-
- 
-
-  
-    
- 
+/*const validator = {
 
   Isvalid: (creditCardNumber) = 
-  
-  { parseInt(creditCardNumber)
-    
- }
- 
+}
 
-export default validator;
+
+export default validator;*/
