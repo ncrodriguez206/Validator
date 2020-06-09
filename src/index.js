@@ -15,6 +15,9 @@ function getData() {
     const aNumeroTarjeta= Array.from(creditCardNumber1);
     console.log(aNumeroTarjeta)
 
+    const aInvertido = aNumeroTarjeta.reverse();
+    console.log(aNumeroTarjeta)
+
 
     //  window.location.href = 'indexP4.html' 
   }
