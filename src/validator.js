@@ -1,15 +1,50 @@
-// Traer numero tarjeta 
-const numeroTarjeta= document.getElementById ("creditCardNumber").Value;
-// Volver sting en array 
-const aNumeroTarjeta= parseInt (Array.from("numeroTarjeta"));
-// Invertir el array 
-const aInvertido= aNumeroTarjeta.reverse(); 
-console.log (aInvertido)
 
-/*const validator = {
 
-  Isvalid: (creditCardNumber) = 
+const validator = {
+
+    isvalid: function getData() {
+      
+      var creditCardNumber1 = document.getElementById("creditCardNumber").value;
+
+      const aNumeroTarjeta = Array.from(creditCardNumber1);
+      console.log(aNumeroTarjeta)
+
+      const aInvertido = aNumeroTarjeta.reverse();
+      console.log(aInvertido)
+  
+     aInvertido.forEach (function (element, index) {
+      let nueva = index + 1;
+      if (nueva % 2 == 0) { element = element * 2 };
+  
+      if (element > 9) { element = element - 9 }
+  
+      aInvertido[index] = element;
+  
+      console.log(aInvertido);
+  
+      });
+  
+    console.log(aInvertido);
+    var suma = 0;
+  
+    for (var i = 0; i < aInvertido.length; i++) {
+      suma = suma + parseInt(aInvertido[i]);
+  
+    }
+  
+    console.log(suma);
+  
+    var division = suma % 10
+    console.log(division);
+  
+    if (division === 0) { return true } else { return false }
+  
+  },
+  
+
+    maskify: (aNumeroTarjeta)=> aNumeroTarjeta.slice(0, -4).fill('#') + aNumeroTarjeta.slice(-4)
+
+
 }
 
-
-export default validator;*/
+export default validator;

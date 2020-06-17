@@ -2,41 +2,194 @@
     margin:0px;
     padding: 0px;
     }
-    
-    div#general{
-    margin:auto;
+    @font-face{
+        font-family:Goudy;
+        src: url(GoudyBookletter1911-Regular.ttf);
+    }
+    div#logo { 
+        font-family: Goudy;
+        color:violet;
+        font-size: 90px;
+        position: center;
+        display: flex;
+        height: 330px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 60px;
+        width: 100%;
+        height: 600px;
+        background: #5C258D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, hsla(196, 41%, 45%, 0.616), hsla(272, 58%, 35%, 0.616)), url(./logo.png);
+        background: linear-gradient(to right, hsla(196, 41%, 45%, 0.616), hsla(272, 58%, 35%, 0.61)), url(./logo.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+       }
+    body {   
+    font-family:Goudy;
+    color: #8f0e39;
+    font-size: 20px;
+    text-align: left center;
+    margin-bottom: 60px; margin: 0;
+    height: 300px; 
+    }
+    #BotonTarjeta{
+        font-family: Goudy;
+        color: rebeccapurple;
+        font-size: 20px;
+        margin-bottom: 60px;
+        border: thick;
+        padding: 10px;
+        background-color: rgba(147, 112, 216, 0.082);
+    }
+   html{
+      background: #7005702a;
+     }
+  .filded{
+      position: center;
+      font-family: Goudy;
+      color: rgba(25, 1, 32, 0.493);
+      padding: 10px;
+      width: 500px;
+      border: 2px none;
+      border-radius: 4px;
+      
+  }
+  main{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      left: 100px;
+      font-size: 20px;
+      text-align: center;
+  }
+  .fildod{
+    font-family: Goudy;
+    color: rgb(61, 4, 75);
+    top: -90px;
+    padding: 6px;
+    width: 80px;
+    height: 20px;
+    left: 100px;
+    border:2px solid hsla(272, 58%, 35%, 0.288);
+    border-radius: 4px;
+    position: relative;
+  }
+
+.fildid{
+    position: absolute;
+    font-family: Goudy;
+    color: rgba(43, 2, 53, 0.808);
+    padding: 7px;
+    width: 250px;
+    border: none;
+    top: 470px;
+    height: 30px;
+    left: 210px;
+    border-radius: 4px;}
+form{
+    width: 400px;
+    margin: 900px;
+    background: #ad07ad1e;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 10px;
+    box-sizing: border-box;
     margin-top: 10px;
-    padding: 10px;
-    width: 960px;
-    height: 800px;
-    background-color: black;
-    font-family: helvetica ;
-    position: relative;
+    border-radius: 7px;
     text-align: center;
+
     
+}
+.Boton{
+    background-image: url(./logo3.jpg);
+    border-radius: 20px;
+    font-family: Goudy;
+    color: rebeccapurple;
+    font-size: 40px;
+    margin-bottom: 60px;
+    border: thick;
+    padding: 60px 500px;
+    background-color: rgba(147, 112, 216, 0.082);
     }
-    div#resumen {
-    float:right;
-    
-    font-family: helvetica ;
-    width:200px;
-    height: 500px;
-    background-color: powderblue;
-    
-    }
-    div#logo {
-    width: 640px;
-    height: 240px;
-    background-color: powderblue;
-    font-family: helvetica;
+   h7{ 
+    font-family: Goudy;
+    color:violet;
+    font-size: 90px;
+    position: center;
+    display: flex;
+    height: 330px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.titulo2{
+    font-family:Goudy;
+    color: rgba(144, 14, 57, 0.89);
+    font-size: 25px;
+    text-align: left center;
+}
+.radiob{
+    font-family: Goudy;
+    color: rgba(149, 28, 179, 0.247);
+    width: 85px;
+
+}
+.titulo1{
+    font-family:Goudy;
+    color: #900e39c4;
+    font-size: 25px;
+    text-align: initial;
+}
+ .fildud{
     position: relative;
-    
-    }
-    div#body {
-    margin-top: 20px;
-    width: 640px;
-    height: 580px;
-    background-color: powderblue;
-    font-family: helvetica ;
-    
-    }
+    font-family: Goudy;
+    color: rgb(148, 28, 179);
+    width: 70px;
+    top: -43px;
+    height: 30px;
+    left: -40px;
+    border:2px solid hsla(272, 58%, 35%, 0.288);
+    border-radius: 4px;
+   
+}
+  .select{
+      color:rgb(148, 28, 179);
+      display:block;
+     padding: 5px 10px;
+     height:42px;
+     margin:10px auto;
+     min-width: 105px;
+    -webkit-appearance: none;
+     height: 34px;
+     position: relative;
+     top: -50px;
+     height: 30px;
+     left: -40px;
+  }
+  option{
+    position: relative;
+    font-family: Goudy;
+    color: rgb(148, 28, 179);
+    width: 70px;
+    top: -43px;
+    height: 30px;
+    left: -40px;
+    border:2px solid hsla(272, 58%, 35%, 0.288);
+    border-radius: 4px;
+}
+.fildcd{
+    position: center;
+    font-family: Goudy;
+    color: rgb(179, 28, 146);
+    padding: 7px;
+    width: 70px;
+    height: 30px;
+    left: 100px;
+}
