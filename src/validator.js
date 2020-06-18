@@ -2,16 +2,14 @@
 
 const validator = {
 
-    isvalid: function getData() {
+    isvalid: (creditCardNumber1) => {
       
-      var creditCardNumber1 = document.getElementById("creditCardNumber").value;
-
       const aNumeroTarjeta = Array.from(creditCardNumber1);
       console.log(aNumeroTarjeta)
 
       const aInvertido = aNumeroTarjeta.reverse();
       console.log(aInvertido)
-  
+      
      aInvertido.forEach (function (element, index) {
       let nueva = index + 1;
       if (nueva % 2 == 0) { element = element * 2 };
@@ -41,7 +39,7 @@ const validator = {
   
   },
   
-
+  
     maskify: (aNumeroTarjeta)=> aNumeroTarjeta.slice(0, -4).fill('#') + aNumeroTarjeta.slice(-4)
 
 
