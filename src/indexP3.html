@@ -8,30 +8,109 @@
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
     <div id="logo">
         <div id="logito">
-          <h1> Misuteri shop </h1>
+            <h1> Misuteri shop </h1>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-          </svg></div>
-      </div>
+                style="height: 100%; width: 100%;">
+            </svg></div>
+    </div>
 </head>
 
 <body>
     <center>
         <br>
         <br>
-        <h1 class="titulo2">Faldas</h1>
+        <h1 class="titulo2">Articulos</h1>
         <br>
         <br>
-  
+        <div class="container" id="lista-productos">
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Falda Pana</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="Falda1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">40.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <br>
+                            <li>Pana</li>
+                            <li>Color Salmon</li>
+                            <li>Tallas: S M L </li>
+                        </ul>
+
+                        <button type="button" value= "p" onclick="f1()" id="botonUno"> Agregar </button></label>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Falda Cuadros</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="Falda4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">20.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <br>
+                            <li>Cuero</li>
+                            <li>Figuras geometricas</li>
+                            <li> Tallas: S M </li>
+                        </ul>
+                        <button type="button" value= "p" onclick="f2()" id="botonDos"> Agregar </button></label>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Falda Escocesa</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="Falda 3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">50.000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <br>
+                            <li>Algodon</li>
+                            <li>Estampado</li>
+                            <li>Tallas: S M L </li>
+                        </ul>
+                        <button type="button" value= "p" onclick="f3()" id="botonTres"> Agregar </button></label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4 id="facturaF1"> ... </h4>
+            <h4 id="facturaF2"> ... </h4>
+            <h4 id="facturaF3"> ... </h4>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id=ArenposeK>Comprar</button>
+            <script>function showXR() {
+                    window.location.href = 'indexF.html';
+                }
+                document.querySelector('#ArenposeK').addEventListener('click', showXR)</script>
 
 
     </center>
-       <script src="indexP1.js" type="module"></script>
+    <script src="indexP1.js" type="module"></script>
     <br>
     <br>
     <main></main>
-    <footer></footer>
- </body>
+    <footer>
+        Derechos Reservados | Natalia y Lorena &copy;
+    </footer>
+</body>
 
 </html>

@@ -1,80 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Misuteri shop</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
 </head>
-<body>
-<header>
-  <div id="logo">
-    <div id="logito">
-      <h1> Misuteri shop </h1>
-    </div>
-    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-        style="height: 100%; width: 100%;">
-      </svg></div>
-  </div>
-    <main>
-      <h3>Factura</h3><br>
-      <label> <input type='text' id='nombres' class="filded" placeholder="Nombres y Apellidos" required></label
-        ><br>
-        <br>
-      <label><input type='text' id="ciudad" class="filded" placeholder="Ciudad"></label> <br>
-      <br>
-      <label><input type='text' id='direccion' class="filded" placeholder="Dirección"></label> <br>
-      <br>
-      <label><input type="text" id="celular" class="filded" placeholder="Telefono contacto"> </label>
-      <br>
-     <br>
-      <h3>Información de tarjeta</h3>
-      <br>
-      <input type="radio" name="tipoTarjeta" id="tipoDebito" class='radiob' required> Debito 
-      <input type="radio" name="tipoTarjeta" id="tipoCredito" class='radiob' required>Credito <br>
-      <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="Numero de tarjeta"
-          class="filded" required></label> <br>
-          <br>
-      <label><input type='text' id="nombresTitular" class="filded" placeholder="Nombre titular de la tarjeta"
-          required></label><br>
-      <br>
-      <h5 class="fildcd">T.I</h5>
-         <select class="select">
-          <option>C.C.</option>
-          <option>T.I.</option>
-          <option>C.E.</option>
-          <option>C.E.</option>
-          <option>P.</option>
-        </select>
-      </label>
-      <br>
-      <label><input type='text' id="idPersona" class="fildid" placeholder="Numero documento" required></label><br>
-      <label><input type='number' name="numero" id='numeroCuotas' class="fildod" placeholder="#Cuotas" required
-          size="7"></label>
-      <label><input type='month' id="expiracionTarjeta" class="fildod" placeholder=" MM/DD" required size="7"></label>
-      <input type="password" id="codigoT" class="fildod" placeholder="CCV" required size="7"></label>
-      </div>
-      <br>
-      <h3>Envió de Factura</h3>
-      <br>
-      <label><input type='text' id='Email' class="filded" placeholder="E-mail"></label> <br>
-      <br>
-      <label><input type="text" id="direccionT" class="filded" placeholder="Dirección"> </label> <br>
-      <script src="index.js" type="module"></script>
-      <br>
-      <br>
-      <br>
-      <button id="BotonTarjeta" class="btn btn-violet"> Realizar Pago </button>
-    </main>
-    <form action="">
-        <h1>Resumen de la factura</h1>
-      <br>
-    </form>
-  <br>
-  <script src="validator.js" type="module"></script>
-  <footer>
 
-  </footer>
+
+<header>
+  <div class="textos">
+    <h6>Misuteri shop | Natalia y Lorena</h6>
+    <b href="#" id="abrir1">Bienvenidos a Misuteri shop</b>
+  </div>
 </header>
-</body>
+<div id="miModal" class="modal2">
+  <div class="flexi" id="flexi">
+    <div class="contenido-modal">
+      <div class="modal-header flex">
+        <h2>Misuteri shop</h2>
+        <span class="close" id="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Misuteri es una tienda de ropa online, enfocada principalmente en mujeres con estilos unicos y atrevidos,
+          si te atrevés con gusto te atenderemos.</p>
+          <br>
+          si quieres conocer nuestros productos dale click a <strong>continuar</strong>
+       </div>
+      <br>
+      <button id=ArenposeA>continuar</button>
+      <script>function showPR() { window.location.href = 'indexP1.html'; } document.querySelector('#ArenposeA').addEventListener('click', showPR)</script>
+      <div class="modal-footer">
+        <h3>Hecho por &copy; Lorena & Natalia </h3>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    Derechos Reservados | Lorena & Natalia  &copy;
+</footer>
+<script src="indexM.js" type="module"></script>
+
 </html>
