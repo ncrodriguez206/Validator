@@ -5,10 +5,10 @@ const validator = {
     isvalid: (creditCardNumber1) => {
       
       const aNumeroTarjeta = Array.from(creditCardNumber1);
-      console.log(aNumeroTarjeta)
+    
 
       const aInvertido = aNumeroTarjeta.reverse();
-      console.log(aInvertido)
+      
       
      aInvertido.forEach (function (element, index) {
       let nueva = index + 1;
@@ -18,11 +18,11 @@ const validator = {
   
       aInvertido[index] = element;
   
-      console.log(aInvertido);
+      
   
       });
   
-    console.log(aInvertido);
+    
     var suma = 0;
   
     for (var i = 0; i < aInvertido.length; i++) {
@@ -30,10 +30,10 @@ const validator = {
   
     }
   
-    console.log(suma);
+   
   
     var division = suma % 10
-    console.log(division);
+    
   
     if (division === 0) { return true } else { return false }
   },

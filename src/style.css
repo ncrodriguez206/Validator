@@ -32,7 +32,6 @@
     font-family: Goudy;
     color: #8f0e39;
     font-size: 20px;
-    text-align: left center;
     margin-bottom: 60px; margin: 0;
     height: 300px; 
     }
@@ -49,6 +48,7 @@
     }
    html{
       background: #7005702a;
+      min-height: 100vh;
      }
   .filded{
       position: center;
@@ -121,10 +121,10 @@ form{
 
 }
 .titulo2{
+    text-align: center;
     font-family:Goudy;
     color: rgba(144, 14, 57, 0.89);
     font-size: 50px;
-    text-align: left center;
 }
 .radiob{
     font-family: Goudy;
@@ -202,6 +202,7 @@ form{
     border: thick;
     padding: 60px 500px;
     background-color: rgba(255, 255, 255, 0.267);
+    position: center;
 }
 #ArenposeC{
     border-radius: 20px;
@@ -557,6 +558,14 @@ footer{
   align-self: flex-end;
 }
 
-  
+.agrego{
+  font-family: Goudy;
+        color: rebeccapurple;
+        font-size: 16px;
+        margin-bottom: 5px;
+        border: thick;
+        padding: 5px;
+        background-color: rgba(147, 112, 216, 0.082);
+}
 
 
