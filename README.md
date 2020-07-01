@@ -53,7 +53,7 @@ para el sketch creamos en hojas de papel propuestas de el arbol de la pagina, cu
 <img src="1.jpg" class="card-img-top">
 <img src="2.jpg" class="card-img-top">
 <img src="3.jpg" class="card-img-top">
-<img src="4.jpg" class="card-img-top">
+ (https://github.com/ApuntaDePuntos/Validator/blob/d2f5f6619c332c3f7226ef4d79cc2ea2f173059e/1.png)
 <img src="5.jpg" class="card-img-top">
 <img src="6.jpg" class="card-img-top">
 <img src="7.jpg" class="card-img-top">
